@@ -1,0 +1,7 @@
+rm -rf CarND-PID-Control-Project-P4
+git clone https://github.com/rons-git/CarND-PID-Control-Project-P4.git
+cd CarND-PID-Control-Project-P4
+chmod a+x *.sh
+./clean.sh
+./build.sh
+./run.sh
