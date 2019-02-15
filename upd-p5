@@ -1,5 +1,6 @@
-echo "broncos1" | sudo -S rm -rf CarND-MPC-Project-P5
-git clone https://github.com/rons-git/CarND-MPC-Project-P5.git
+set -x
+rm -rf CarND-MPC-Project-P5
+git clone https://github.com/sdc4nubes/CarND-MPC-Project-P5.git
 cd CarND-MPC-Project-P5
 chmod a+x *.sh
 ./clean.sh

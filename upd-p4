@@ -1,5 +1,6 @@
+set -x
 rm -rf CarND-PID-Control-Project-P4
-git clone https://github.com/rons-git/CarND-PID-Control-Project-P4.git
+git clone https://github.com/sdc4nubes/CarND-PID-Control-Project-P4.git
 cd CarND-PID-Control-Project-P4
 chmod a+x *.sh
 ./clean.sh
