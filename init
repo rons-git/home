@@ -1,13 +1,23 @@
-sudo apt-get update
-sudo apt-get install git
-sudo apt-get install cmake
-sudo apt-get install openssl
-sudo apt-get install libssl-dev
+sudo apt-get update -y
+sudo apt-get install git -y
+sudo apt-get install cmake -y
+sudo apt-get install openssl -y
+sudo apt-get install libssl-dev -y
 sudo rm /usr/lib/libuWS.so
-git clone https://github.com/sdc4nubes/home.git
-git clone https://github.com/sdc4nubes/CarND-Extended-Kalman-Filter-P1.git
-cd CarND-Extended-Kalman-Filter-P1
-chmod a+x *.sh
-./install-ubuntu.sh
-cd ..
-rm -rf CarND-Extended-Kalman-Filter-P1
+sudo apt-get install libuv1-dev -y 
+sudo apt-get install gcc -y
+sudo apt-get install g++ -y
+sudo apt-get install make -y
+sudo apt-get install zlib1g-dev
+git clone https://github.com/uWebSockets/uWebSockets 
+cd uWebSockets
+git checkout e94b6e1
+mkdir build
+cd build
+cmake ..
+make 
+sudo make install
+cd ../..
+sudo ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
+sudo rm -r uWebSockets
+sudo apt autoremove
