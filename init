@@ -1,3 +1,4 @@
+set -x
 sudo apt-get update -y
 sudo apt-get install git -y
 sudo apt-get install cmake -y
@@ -8,7 +9,7 @@ sudo apt-get install libuv1-dev -y
 sudo apt-get install gcc -y
 sudo apt-get install g++ -y
 sudo apt-get install make -y
-sudo apt-get install zlib1g-dev
+sudo apt-get install zlib1g-dev -y
 git clone https://github.com/uWebSockets/uWebSockets 
 cd uWebSockets
 git checkout e94b6e1
@@ -20,4 +21,4 @@ sudo make install
 cd ../..
 sudo ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
 sudo rm -r uWebSockets
-sudo apt autoremove
+sudo apt autoremove -y
