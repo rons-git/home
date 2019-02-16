@@ -1,0 +1,8 @@
+set -x
+rm -rf CarND-Catch-Run-Away-Car-UKF-P2
+git clone https://github.com/sdc4nubes/CarND-Catch-Run-Away-Car-UKF-P2.git
+cd CarND-Catch-Run-Away-Car-UKF-P2
+chmod a+x *.sh
+./clean.sh
+./build.sh
+./run.sh
