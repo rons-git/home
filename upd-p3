@@ -1,0 +1,8 @@
+set -x
+rm -rf CarND-Kidnapped-Vehicle-Project-P3
+git clone https://github.com/sdc4nubes/CarND-Kidnapped-Vehicle-Project-P3.git
+cd CarND-Kidnapped-Vehicle-Project-P3
+chmod a+x *.sh
+./clean.sh
+./build.sh
+./run.sh
