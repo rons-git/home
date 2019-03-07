@@ -1,0 +1,5 @@
+set -x
+cd ..
+rm -rf home
+git clone https://github.com/sdc4nubes/home.git
+chmod a+x *.*
