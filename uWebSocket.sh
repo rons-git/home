@@ -1,4 +1,5 @@
 #!/bin/bash
+
 source /etc/os-release || echo 'Warning: /etc/os-release was not found'
 
 if [[ " $ID_LIKE " == *' archlinux '* ]]; then
@@ -23,3 +24,5 @@ sudo make install
 cd ../..
 sudo ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
 sudo rm -r uWebSockets
+sudo apt autoremove -y
+
