@@ -9,7 +9,7 @@ else
     echo 'Warning: unidentified Linux distribution, assuming Debian-like'
   fi
 
-  sudo apt-get update
+  sudo apt-get update -y
   sudo apt-get install git libuv1-dev libssl-dev gcc g++ cmake make
 fi
 
@@ -20,7 +20,7 @@ mkdir build
 cd build
 cmake ..
 make 
-sudo make install
+sudo make install -y
 cd ../..
 sudo ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
 sudo rm -r uWebSockets
