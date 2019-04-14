@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 source /etc/os-release || echo 'Warning: /etc/os-release was not found'
 
@@ -10,7 +11,7 @@ else
   fi
 
   sudo apt-get update -y
-  sudo apt-get install git libuv1-dev libssl-dev gcc g++ cmake make
+  sudo apt-get install -y git libuv1-dev libssl-dev gcc g++ cmake make
 fi
 
 git clone https://github.com/uWebSockets/uWebSockets 
