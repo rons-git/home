@@ -2,5 +2,6 @@
 set -x
 #./uWebSocket.sh
 ./uROS.sh
-#./uCapstone
+#./uPip.sh
+#./uCapstone.sh
 cd ~/sdc

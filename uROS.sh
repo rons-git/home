@@ -4,7 +4,7 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C
 sudo apt-get update
 sudo apt-get install ros-kinetic-desktop-full -y
 sudo rosdep init
-rosdep update
+rosdep update -y
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "cd ~/sdc" >> ~/.bashrc
 source ~/.bashrc
