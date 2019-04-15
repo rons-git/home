@@ -10,4 +10,4 @@ rosdep update -y
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "cd ~/sdc" >> ~/.bashrc
 source ~/.bashrc
-y | bash <(wget -q -O - https://bitbucket.org/DataspeedInc/dbw_mkz_ros/raw/default/dbw_mkz/scripts/sdk_install.bash)
+yes | bash <(wget -q -O - https://bitbucket.org/DataspeedInc/dbw_mkz_ros/raw/default/dbw_mkz/scripts/sdk_install.bash)
