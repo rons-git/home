@@ -1,5 +1,8 @@
 set -x
-rm -rf CarND-Capstone
+sudo apt-get update -y
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+python get-pip.py
+sudo apt install python3-pip
 git clone https://github.com/rons-git/CarND-Capstone.git
 cd CarND-Capstone
 chmod a+x *.sh
