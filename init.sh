@@ -1,4 +1,4 @@
-# Before runding this script, reset ubuntu
+# Before running this script, reset ubuntu
 set -x
 ./uWebSocket.sh
 #./uROS.sh
