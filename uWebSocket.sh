@@ -22,7 +22,7 @@ mkdir build
 cd build
 cmake ..
 make 
-sudo make install -y
+sudo make install
 cd ../..
 sudo ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
 sudo rm -r uWebSockets
