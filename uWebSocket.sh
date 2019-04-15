@@ -1,5 +1,6 @@
 #!/bin/bash
 set -x
+echo broncos1 | sudo -S command
 
 source /etc/os-release || echo 'Warning: /etc/os-release was not found'
 
