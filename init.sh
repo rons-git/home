@@ -4,4 +4,5 @@ set -x
 #./uROS.sh
 ./uPip.sh
 ./uCapstone.sh
+./uRequirements.sh
 cd ~/sdc

@@ -7,5 +7,3 @@ sudo python get-pip.py
 sudo apt install python3-pip -y
 hash -d pip
 pip install --upgrade pip
-cd CarND-Capstone
-pip install -r requirements.txt
