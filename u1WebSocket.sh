@@ -10,7 +10,7 @@ else
     echo 'Warning: unidentified Linux distribution, assuming Debian-like'
   fi
 
-  sudo apt-get update -y
+  echo 'broncos1' | sudo -S apt-get update -y
   sudo apt-get install -y git libuv1-dev libssl-dev gcc g++ cmake make
 fi
 
