@@ -1,11 +1,10 @@
 #!/bin/bash
 set -ex
-echo 'broncos1' | sudo -S command
 
 source /etc/os-release || echo 'Warning: /etc/os-release was not found'
 
 if [[ " $ID_LIKE " == *' archlinux '* ]]; then
-  sudo pacman -S git libuv openssl gcc cmake make
+  echo 'broncos1' | sudo -S pacman git libuv openssl gcc cmake make
 else
   if [[ ! " $ID_LIKE " == *' debian '* ]]; then
     echo 'Warning: unidentified Linux distribution, assuming Debian-like'
