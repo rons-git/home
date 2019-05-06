@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt-get install ros-kinetic-desktop-full -y
 echo broncos1 | sudo -S rosdep init
 rosdep update -y
-echo broncos1 | sudo -S apt install python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "cd ~/sdc" >> ~/.bashrc
 echo "alias python=python3" >> ~/.bashrc
