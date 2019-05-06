@@ -1,5 +1,5 @@
 set -x
-cd CarND-Capstone/scripts
+cd ~/sdc/ScorpionDrive-System-Integration/scripts
 chmod a+x *.sh
-./native.sh
+./ubuntu.sh
 
