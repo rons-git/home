@@ -9,3 +9,4 @@ set -ex
 ./u6Pip.sh
 ./u7Cuda.sh
 ./u8Requirements.sh
+./r9Capstone.sh
