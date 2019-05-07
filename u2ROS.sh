@@ -7,7 +7,6 @@ sudo apt-get install ros-kinetic-desktop-full -y
 echo broncos1 | sudo -S rosdep init
 rosdep update -y
 sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
-sudo apt-get install ros-kinetic-controller-manager -y
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "cd ~/sdc" >> ~/.bashrc
 echo "alias python=python3" >> ~/.bashrc
